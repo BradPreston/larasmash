@@ -5,24 +5,6 @@
 
 <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-x-8 gap-y-16">
     {{ entries }}
-        <div class="rounded-xl h-[500px] bg-black group flex flex-col hover:scale-105 transition duration-400 ease-in-out">
-            <a href="{{ url }}" class="relative overflow-hidden rounded-t-xl">
-                <img src="{{ featured_image }}" class="object-cover transition duration-400 ease-in-out scale-110 group-hover:scale-100 w-full h-60">
-            </a>
-            <div class="px-6 py-8 flex flex-col justify-between flex-1">
-                <h3 class="font-bold text-2xl text-white">
-                    <a href="{{ url }}" class="transition hover:text-yellow-500">{{ title }}</a>
-                </h3>
-                <div class="flex items-end justify-between">
-                    <div>
-                        <p>{{ date }}</p>
-                        <p class="text-sm">By <a href="" class="text-gray-500 hover:text-white">{{ author:name }}</a></p>
-                    </div>
-                    {{ tags }}
-                    <a href="{{ url }}" class="px-3 py-1 text-gray-100 font-bold bg-yellow-500 transition hover:bg-orange-500 rounded-full">{{ title }}</a>
-                    {{ /tags }}
-                </div>
-            </div>
-        </div>
+        {{ partial:news/card hide_tag="true" }}
     {{ /entries }}
 </section>
