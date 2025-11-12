@@ -1,0 +1,10 @@
+tree:
+  -
+    id: 5b9f8050-f47d-4f14-aa42-1de04a37cfc6
+    title: 'Cool things'
+    url: 'https://google.com'
+    data:
+      external: true
+  -
+    id: 6f39640a-5a53-4844-bb90-e184580b3664
+    entry: 6c230fbe-d7c0-4691-9fe6-3b766f9dc77e
