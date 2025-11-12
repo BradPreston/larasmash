@@ -1,10 +1,10 @@
 <header class="my-12 md:my-16 lg:my-24 text-center">
-    <p class="text-green-500 font-bold text-lg antialiased mb-4">That Flux Life</p>
+    <p class="text-green-500 font-bold text-lg antialiased mb-4">Articles</p>
     <h1 class="text-6xl md:text-7xl lg:text-8xl text-white font-bold">{{ title }}</h1>
 </header>
 
 <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-x-8 gap-y-16">
-    {{ collection:news }}
+    {{ entries }}
         <div class="rounded-xl h-[500px] bg-black group flex flex-col hover:scale-105 transition duration-400 ease-in-out">
             <a href="{{ url }}" class="relative overflow-hidden rounded-t-xl">
                 <img src="{{ featured_image }}" class="object-cover transition duration-400 ease-in-out scale-110 group-hover:scale-100 w-full h-60">
@@ -24,5 +24,5 @@
                 </div>
             </div>
         </div>
-    {{ /collection:news }}
+    {{ /entries }}
 </section>
